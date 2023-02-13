@@ -1,6 +1,246 @@
+
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeplinks Test</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
   <body>
-    <h1>Sample</h1>
+    <ul>
+      <h1>Deeplinks</h1>
+
+      <a href="https://point.rakuten.co.jp/">https://point.rakuten.co.jp/</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/?scid=test">https://point.rakuten.co.jp/?scid=test</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/?l-id=test">https://point.rakuten.co.jp/?l-id=test</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/app/">https://point.rakuten.co.jp/app/</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/doc/app/download/">https://point.rakuten.co.jp/doc/app/download/</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/guidance/app/">https://point.rakuten.co.jp/guidance/app/</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/applinks/home">https://point.rakuten.co.jp/applinks/home</a>
+      <br>
+      (Logged in: Open PointClub App and show its HomeScreen)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/applinks/campaign-list">https://point.rakuten.co.jp/applinks/campaign-list</a>
+      <br>
+      (Logged in: Open PointClub App and show its Campaign List)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/applinks/notification-box">https://point.rakuten.co.jp/applinks/notification-box</a>
+      <br>
+      (Logged in: Open PointClub App and show its Notification Box)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/applinks/preferences">https://point.rakuten.co.jp/applinks/preferences</a>
+      <br>
+      (Logged in: Open PointClub App and show its PreferencesScreen)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/history/">https://point.rakuten.co.jp/history/</a>
+      <br>
+      (Logged in: Open PointClub App and show Point History page)
+      <br>
+      (Logged out: <br>
+      Open PointClub App and show its ProceedLoginScreen, <br>
+      After the login succeeded, open the Webview Screen with logged in PointHistory page)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/history/?scid=wi_grp_gmx_rpay_gadget_history_app/">https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/history/</a>
+      <br>
+      (Logged in: Open PointClub App and show Point History page)
+      <br>
+      (Logged out: <br>
+      Open PointClub App and show its ProceedLoginScreen, <br>
+      After the login succeeded, open the Webview Screen with logged in PointHistory page)
+      <br><br>
+      <a href="https://point.rakuten.co.jp/applinks/unmapped-page">https://point.rakuten.co.jp/applinks/unmapped-page</a>
+      <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="pointclub://home">pointclub://home</a>
+     <br>
+      (Logged in: Open PointClub App and show its HomeScreen)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+     <br><br>
+      <a href="pointclub://campaign-list">pointclub://campaign-list</a>
+      <br>
+      (Logged in: Open PointClub App and show its Campaign List)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="pointclub://notification-box">pointclub://notification-box</a>
+     <br>
+      (Logged in: Open PointClub App and show its Notification Box)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+     <br><br>
+      <a href="pointclub://preferences">pointclub://preferences</a>
+      <br>
+      (Logged in: Open PointClub App and show its PreferencesScreen)
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="pointclub://unmapped-page">pointclub://unmapped-page</a>
+     <br>
+      (Logged in: Open PointClub App (and do nothing, which means let the app handle the navigation)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+      774 deep link
+      <br><br>
+      <a href="https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/history/?scid=wi_grp_gmx_rpay_gadget_history_app/">https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/history/</a>
+      <br>
+      (Logged in: Open PointClub App and show Point History page)
+      <br>
+      (Logged out: <br>
+      Open PointClub App and show its ProceedLoginScreen, <br>
+      After the login succeeded, open the Webview Screen with logged in PointHistory page)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fpoint.rakuten.co.jp%2Fhistory%2F%3Fscid%3Dwi_grp_gmx_rpay_gadget_history_app">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fpoint.rakuten.co.jp%2Fhistory%2F%3Fscid%3Dwi_grp_gmx_rpay_gadget_history_app</a>
+     <br>
+      (encode -point history URL -Logged in: Open PointClub App and show its point history page)) 
+      <br>
+      (Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.co.jp%2Fcategory%2F210102%2F%3Fl-id%3Dtop_normal_gmenu_d_interior_003">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.co.jp%2Fcategory%2F210102%2F%3Fl-id%3Dtop_normal_gmenu_d_interior_003</a>
+     <br>
+      (domain = rakuten.co.jp (encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.co.jp (encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.co.jp/category/210102/?l-id=top_normal_gmenu_d_interior_003">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.co.jp/category/210102/?l-id=top_normal_gmenu_d_interior_003</a>
+     <br>
+      (domain = rakuten.co.jp (un-encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.co.jp (un-encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.co.jp%2Fcategory%2F200833%2F%3Fl-id%3Dtop_normal_gmenu_d_baby_005">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.co.jp%2Fcategory%2F200833%2F%3Fl-id%3Dtop_normal_gmenu_d_baby_005</a>
+     <br>
+      (domain = rakuten.jp (encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.jp (encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.co.jp/category/200833/?l-id=top_normal_gmenu_d_baby_005">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.co.jp/category/200833/?l-id=top_normal_gmenu_d_baby_005</a>
+     <br>
+      (domain = rakuten.jp (un-encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.jp (un-encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.com%2Fhelp%2Farticle%2Fprivacy-policy-360002101688">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten.com%2Fhelp%2Farticle%2Fprivacy-policy-360002101688</a>
+     <br>
+      (domain = rakuten.com (encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.com(encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.com/help/article/privacy-policy-360002101688">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten.com/help/article/privacy-policy-360002101688</a>
+     <br>
+      (domain = rakuten.com (un-encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = rakuten.com(un-encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-card.co.jp%2Fcampaign%2Frakuten_card%2Fcorp%2F%3Fl-id%3Dcorp_oo_cpnbr_card_pc">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-card.co.jp%2Fcampaign%2Frakuten_card%2Fcorp%2F%3Fl-id%3Dcorp_oo_cpnbr_card_pc</a>
+     <br>
+      (domain = .rakuten-card.co.jp (encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = .rakuten-card.co.jp(encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-card.co.jp/campaign/rakuten_card/corp/?l-id=corp_oo_cpnbr_card_pc">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-card.co.jp/campaign/rakuten_card/corp/?l-id=corp_oo_cpnbr_card_pc</a>
+     <br>
+      (domain = .rakuten-card.co.jp (un-encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = .rakuten-card.co.jp(un-encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-bank.co.jp/campaign/program.html?l-id=top_z_181105_0015_CO920">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-bank.co.jp/campaign/program.html?l-id=top_z_181105_0015_CO920</a>
+     <br>
+      (domain = .rakuten-bank.co.jp (un-encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = .rakuten-bank.co.jp  (un-encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-bank.co.jp%2Fcampaign%2Fprogram.html%3Fl-id%3Dtop_z_181105_0015_CO920">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-bank.co.jp%2Fcampaign%2Fprogram.html%3Fl-id%3Dtop_z_181105_0015_CO920</a>
+     <br>
+      (domain = .rakuten-bank.co.jp (encode URL)->Logged in: Open PointClub App and show its target screen)) 
+      <br>
+      (domain = .rakuten-bank.co.jp  (encode URL)->Logged out: Open PointClub App and show its ProceedLoginScreen)
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=http%3A%2F%2Fpoint.rakuten.co.jp%2Fhistory%2F%3Fscid%3Dwi_grp_gmx_rpay_gadget_history_app">https://point.rakuten.co.jp/openwebview/?url=http%3A%2F%2Fpoint.rakuten.co.jp%2Fhistory%2F%3Fscid%3Dwi_grp_gmx_rpay_gadget_history_app</a>
+     <br>
+      (url not 'https' (encode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=http://point.rakuten.co.jp/history/?scid=wi_grp_gmx_rpay_gadget_history_app">https://point.rakuten.co.jp/openwebview/?url=http://point.rakuten.co.jp/history/?scid=wi_grp_gmx_rpay_gadget_history_app</a>
+     <br>
+      (url not 'https' (un-encode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/?testFlg=1&rakutenSuperPoint=5555555">https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp/?testFlg=1&rakutenSuperPoint=5555555</a>
+     <br>
+      (super point=5555555 (unencode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fpoint.rakuten.co.jp%2F%3FtestFlg%3D1%26rakutenSuperPoint%3D5555555">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fpoint.rakuten.co.jp%2F%3FtestFlg%3D1%26rakutenSuperPoint%3D5555555</a>
+     <br>
+      (super point=5555555 (encode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?investeddetail=open&url=https%3A%2F%2Fpoint.rakuten.co.jp%2F%3FtestFlg%3D1%26rakutenSuperPoint%3D5555555">https://point.rakuten.co.jp/openwebview/?investeddetail=open&url=https%3A%2F%2Fpoint.rakuten.co.jp%2F%3FtestFlg%3D1%26rakutenSuperPoint%3D5555555</a>
+     <br>
+      (investeddetail) 
+     <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.google.com">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.google.com</a>
+     <br>
+      (domain not rakuten (encode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.google.com/">https://point.rakuten.co.jp/openwebview/?url=https://www.google.com</a>
+     <br>
+      (domain not rakuten (unencode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-bank.co.jp%2Fsmartphone%2Floan%2Fcardloan%2F">https://point.rakuten.co.jp/openwebview/?url=https%3A%2F%2Fwww.rakuten-bank.co.jp%2Fsmartphone%2Floan%2Fcardloan%2F</a>
+     <br>
+      (blacklist (encode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-bank.co.jp/smartphone/loan/cardloan/">https://point.rakuten.co.jp/openwebview/?url=https://www.rakuten-bank.co.jp/smartphone/loan/cardloan/</a>
+     <br>
+      (blacklist  (unencode URL)) 
+      <br><br>
+     <a href="https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp.abc">https://point.rakuten.co.jp/openwebview/?url=https://point.rakuten.co.jp.abc</a>
+     <br>
+      (URL is not correct (unencode URL)) 
+    </ul>
   </body>
 </html>
