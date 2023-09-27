@@ -22,7 +22,7 @@
     <!-- JavaScript: ボタンがクリックされたときにメッセージを送信する関数 -->
     <script>
         function navigateToA() {
-            window.webkit.messageHandlers.closeWebView.postMessage("navigateToA");
+            window.webkit.messageHandlers.showNativeReviewDialog.postMessage("navigateToA");
         }
 
         function navigateToB() {
