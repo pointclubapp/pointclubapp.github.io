@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigate to Screen</title>
+    <style>
+        /* CSS: ボタンのスタイルを定義します */
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML: 2つのボタンを追加します -->
+    <button onclick="navigateToA()">Navigate to Screen A</button>
+    <button onclick="navigateToB()">Navigate to Screen B</button>
+
+    <!-- JavaScript: ボタンがクリックされたときにメッセージを送信する関数 -->
+    <script>
+        function navigateToA() {
+            window.webkit.messageHandlers.closeWebView.postMessage("navigateToA");
+        }
+
+        function navigateToB() {
+            window.webkit.messageHandlers.closeWebView.postMessage("navigateToB");
+        }
+    </script>
+</body>
+</html>
