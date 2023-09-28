@@ -16,17 +16,13 @@
 </head>
 <body>
     <!-- HTML: 2つのボタンを追加します -->
-    <button onclick="navigateToA()">アプリのトップに戻る</button>
-    <button onclick="navigateToB()">Pushの設定をする</button>
+    <button onclick="moveToNativeScreen('homeScreen')">アプリのトップに戻る</button>
+    <button onclick="navigateToB('settingScreen')">Pushの設定をする</button>
 
     <!-- JavaScript: ボタンがクリックされたときにメッセージを送信する関数 -->
     <script>
-        function navigateToA() {
-            window.webkit.messageHandlers.moveToNativeScreen.postMessage("homeScreen");
-        }
-
-        function navigateToB() {
-            window.webkit.messageHandlers.moveToNativeScreen.postMessage("settingScreen");
+        function moveToNativeScreen(screenName) {
+            window.webkit.messageHandlers.moveToNativeScreen.postMessage(screenName);
         }
     </script>
 </body>
