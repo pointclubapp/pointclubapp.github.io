@@ -22,11 +22,11 @@
     <!-- JavaScript: ボタンがクリックされたときにメッセージを送信する関数 -->
     <script>
         function navigateToA() {
-            window.webkit.messageHandlers.showNativeReviewDialog.postMessage("navigateToA");
+            window.webkit.messageHandlers.moveToNativeScreen.postMessage("homeScreen");
         }
 
         function navigateToB() {
-            window.webkit.messageHandlers.closeWebView.postMessage("navigateToB");
+            window.webkit.messageHandlers.moveToNativeScreen.postMessage("settingScreen");
         }
     </script>
 </body>
