@@ -1,0 +1,305 @@
+<html lang="ja">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>ポイント獲得カレンダー</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="https://point.rakuten.co.jp/_assets/css/sp/common/ptc_common_sp.css">
+   <link rel="stylesheet" href="https://point.rakuten.co.jp/_assets/css/sp/history/calendar/index.css">
+
+   <script>
+   window.onload = function() {
+      var anchors = document.getElementsByClassName('js_click_date');
+
+      for (var i = 0; i < anchors.length; i++) {
+         anchors[i].addEventListener('click', function(e) {
+
+         var point = e.currentTarget.getAttribute('data-point-month');
+         var date = e.currentTarget.getAttribute('data-point-date');
+         console.log('Point: ' + point + '. Date: ' + date);
+         // Here you can send 'month' and 'date' to your server or use it in any other way
+         if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.clickCalendarDate) {
+               window.webkit.messageHandlers.clickCalendarDate.postMessage({
+                "point": point,
+                "date": date
+               });
+         }
+
+         });
+      }
+
+   }
+   </script>
+
+   <body class="pointclub-app os-ios">
+      <div class="kanoene_page-wrap">
+      <div class="kanoene_contents">
+         <!-- .kanoene_contents -->
+         <section class="kanoene_section kanoene_type-basic kanoene_type-point-calendar">
+            <div class="kanoene_section-inner">
+               <div id="js-point-earn-calendar">
+                  <div class="calendar">
+                     <div class="kanoene_section-header">
+                        <h2>2023<span class="unit">年</span> 12<span class="unit">月</span></h2>
+                     </div>
+                     <div class="kanoene_section-body">
+                        <div class="calendar-header">
+                           <div class="day-week">日</div>
+                           <div class="day-week">月</div>
+                           <div class="day-week">火</div>
+                           <div class="day-week">水</div>
+                           <div class="day-week">木</div>
+                           <div class="day-week">金</div>
+                           <div class="day-week">土</div>
+                        </div>
+
+                        <!-- 1st row -->
+
+                        <div class="row-date">
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">26</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">27</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">28</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">29</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">30</div>
+                              </div>
+                           </div>
+
+                           <!-- Case 1: Points was already granted -->
+                           <a data-point-status="point-earned" data-point-month="16" data-point-date="20231201" class="js_click_date date-cell point-earned">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">1</div>
+                                 <div class="point_num text-mono">16</div>
+                                 <div class="badge-earned"></div>
+                              </div>
+                           </a>
+
+                           <!-- Case 2: Current date -->
+                           <div class="date-cell current-date">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">2</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 2nd row -->
+                        <div class="row-date">
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">3</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">4</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">5</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">6</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">7</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">8</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">9</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 3nd row -->
+                        <div class="row-date">
+                           <!-- Case 3: Will earn points -->
+                           <a data-point-status="point-earn" data-point-month="320" data-point-date="20231210" class="js_click_date date-cell point-earn">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">10</div>
+                                 <div class="point_num text-mono">320</div>
+                              </div>
+                           </a>
+
+                           <!-- Case 4: Normal date -->
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">11</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">12</div>
+                              </div>
+                           </div>
+                           <a data-point-status="point-earn" data-point-month="320" data-point-date="20231213" class="js_click_date date-cell point-earn">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">13</div>
+                                 <div class="point_num text-mono">320</div>
+                              </div>
+                           </a>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">14</div>
+                              </div>
+                           </div>
+                           <a data-point-status="point-earn" data-point-month="1920" data-point-date="20231215" data-ratid="calendar_page_date_tobe_over" class="js_click_date date-cell point-earn over-threshold">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">15</div>
+                                 <div class="point_num text-mono">1,920</div>
+                              </div>
+                              <img class="over-threshold-animation" src="https://point.rakuten.co.jp/_assets/img/sp/history/calendar/anime.png" alt="">
+                           </a>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">16</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 4th row -->
+                        <div class="row-date">
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">17</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">18</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">19</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">20</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">21</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">22</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">23</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row-date">
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">24</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">25</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">26</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">27</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">28</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">29</div>
+                              </div>
+                           </div>
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">30</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row-date">
+                           <div class="date-cell">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">31</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">1</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">2</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">3</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">4</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">5</div>
+                              </div>
+                           </div>
+                           <div class="date-cell disable">
+                              <div class="date-cell-bg">
+                                 <div class="wrap-num">6</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </body> 
+</html>
